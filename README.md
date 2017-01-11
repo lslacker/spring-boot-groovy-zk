@@ -1,4 +1,5 @@
 # spring-boot-groovy-zk
-An example of how to integrate the ZK framework on a spring-boot / groovy web application (Spring Boot 1.3.0)
+Copy from https://github.com/mtrojahn/spring-boot-groovy-zk
 
-Original post: http://www.marcelustrojahn.com/2015/12/integrating-zk-framework-on-a-spring-boot-application/
+# Add application.properties
+# Able to run under Tomcat server in Eclipse
