@@ -1,4 +1,4 @@
-group 'com.mtrojahn'
+group 'luan.mai.zk'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -6,12 +6,18 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.3.0.RELEASE"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:1.4.3.RELEASE"
     }
 }
 
 apply plugin: 'groovy'
 apply plugin: 'spring-boot'
+apply plugin: 'eclipse'
+apply plugin: 'war'
+
+
+
+
 
 repositories {
     mavenCentral()
@@ -28,7 +34,10 @@ configurations {
 }
 
 dependencies {
-    compile "org.springframework.boot:spring-boot-starter-web"
+//    compile("org.springframework.boot:spring-boot-starter-web") {
+//		exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat' 
+//	}
+	compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.zkoss.zk:zkplus:8.0.0"
     compile "org.zkoss.zk:zkbind:8.0.0"
     compile "org.zkoss.zk:zkspring-core:3.0"

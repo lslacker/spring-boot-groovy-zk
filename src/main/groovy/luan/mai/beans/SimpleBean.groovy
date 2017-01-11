@@ -1,5 +1,6 @@
-package com.mtrojahn.boot
+package luan.mai.beans
 
+import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.stereotype.Component
 
 @Component

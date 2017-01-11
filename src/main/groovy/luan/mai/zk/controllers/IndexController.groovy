@@ -1,4 +1,4 @@
-package com.mtrojahn.zk.controllers
+package luan.mai.zk.controllers
 
 import org.zkoss.bind.annotation.Init
 import org.zkoss.zk.ui.select.annotation.VariableResolver
@@ -11,10 +11,13 @@ class IndexController {
     @WireVariable("simpleBean")
     def simpleBean
 
+    @WireVariable("applicationConfig")
+    def applicationConfig
+
     def message
 
     @Init
     def init() {
-        message = simpleBean.echo("Hello World!");
+        message = applicationConfig.message
     }
 }

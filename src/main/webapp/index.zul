@@ -6,5 +6,5 @@
         viewModel="@id('vm') @init('com.mtrojahn.zk.controllers.IndexController')">
 
     <label value="@load(vm.message)" />
-
+    <label value="Minh Nguyen"/>
 </window>

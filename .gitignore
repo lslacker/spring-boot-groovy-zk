@@ -4,3 +4,7 @@
 /.idea
 /.gradle
 # Created by .ignore support plugin (hsz.mobi)
+/bin/
+.classpath
+.project
+.settings
